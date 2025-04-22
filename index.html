@@ -4,26 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hire Walter</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .logo-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .logo {
+      max-width: 300px;
+      height: auto;
+    }
+    .pdf-viewer {
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <div class="logo-container">
-    <img src="main/hirewalter-logo.png" alt="Hire Walter Logo" class="logo" />
+    <img src="assets/hirewalter-logo.png" alt="Hire Walter Logo" class="logo" />
   </div>
 
   <div class="pdf-viewer">
     <p>
-      <strong>Having trouble viewing the PDF?</strong>
-      <a href="main/hirewalter.pdf" download>Click here to download it directly.</a>
+      <strong>Can't see the resume?</strong>
+      <a href="https://drive.google.com/file/d/1TOI4DDe7dz_DVEnvAhcc0_KUDKPhodq4/view?usp=sharing" target="_blank">
+        Click here to open it in a new tab
+      </a>
     </p>
-    <iframe>
-      src="main/hirewalter.pdf"
+    <iframe
+      src="https://drive.google.com/file/d/1TOI4DDe7dz_DVEnvAhcc0_KUDKPhodq4/preview"
       width="100%"
       height="1000px"
-      style="border: 1px solid #ccc;"
+      style="border: none;"
     >
-      Your browser does not support embedded PDFs. Please download the PDF to view it: 
-      <a href="assets/hirewalter.pdf">Download PDF</a>
+      Your browser does not support iframes.
     </iframe>
   </div>
 </body>
