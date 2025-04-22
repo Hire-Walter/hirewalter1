@@ -1,0 +1,12 @@
+.logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+.logo {
+  max-width: 300px;
+  height: auto;
+}
+.pdf-viewer {
+  padding: 20px;
+  text-align: center;
+}
