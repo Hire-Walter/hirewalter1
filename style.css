@@ -16,6 +16,7 @@ body {
   display: inline-block;
   margin: 0 15px;
   font-size: 1.1rem;
+  font-weight: 700; /* Bold */
   color: #FF6700;
   text-decoration: none;
 }
