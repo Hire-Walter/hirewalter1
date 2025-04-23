@@ -1,6 +1,6 @@
 
 body {
-  font-family: sans-serif;
+  font-family:'JetBrains Mono', monospace;
   margin: 0;
   padding: 0;
   background: #fff;
@@ -16,7 +16,7 @@ body {
   display: inline-block;
   margin: 0 15px;
   font-size: 1.1rem;
-  font-weight: 700; /* Bold */
+  font-weight: 800; /* Extra-bold */
   color: #FF6700;
   text-decoration: none;
 }
