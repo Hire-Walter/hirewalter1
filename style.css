@@ -23,6 +23,12 @@ body {
 .contact-links a:hover {
   text-decoration: underline;
 }
+.contact-links .order-link {
+  background: #111;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 4px;
+}
 main {
   padding: 20px;
 }

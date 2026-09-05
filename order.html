@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Start a website, branding, graphic design, training, or special creative project with Hire Walter.">
+  <title>Start a Project | Hire Walter</title>
+  <link rel="stylesheet" href="order.css">
+  <script src="order.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Hire Walter home"><span>HIRE</span> WALTER</a>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Portfolio</a>
+      <a href="mailto:info@hirewalter.com">Email</a>
+      <a href="sms:+16179212216">Text</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro">
+      <p class="eyebrow">PROJECT INTAKE</p>
+      <h1>Tell me what you need.</h1>
+      <p>Choose your project type and the form will show only the questions that matter. Most requests take about five minutes.</p>
+    </div>
+
+    <form id="project-form" action="https://formsubmit.co/info@hirewalter.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_subject" value="New Hire Walter project request">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://www.hirewalter.com/thanks.html">
+      <input type="hidden" name="_replyto" id="replyto">
+      <input class="honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <section class="form-section" aria-labelledby="contact-heading">
+        <div class="section-heading">
+          <span>01</span>
+          <div><h2 id="contact-heading">Your information</h2><p>Who should I contact about this project?</p></div>
+        </div>
+        <div class="field-grid two-column">
+          <label><span>Name <b aria-hidden="true">*</b></span><input type="text" name="Name" autocomplete="name" required></label>
+          <label><span>Company or organization</span><input type="text" name="Company" autocomplete="organization"></label>
+          <label><span>Email <b aria-hidden="true">*</b></span><input id="email" type="email" name="Email" autocomplete="email" required></label>
+          <label><span>Phone</span><input type="tel" name="Phone" autocomplete="tel"></label>
+        </div>
+      </section>
+
+      <section class="form-section" aria-labelledby="project-heading">
+        <div class="section-heading">
+          <span>02</span>
+          <div><h2 id="project-heading">What are we creating?</h2><p>Select everything that applies.</p></div>
+        </div>
+
+        <fieldset class="project-types" id="project-types">
+          <legend class="sr-only">Project type</legend>
+          <label><input type="checkbox" name="Project type[]" value="Website" data-project="website"><span>Website</span></label>
+          <label><input type="checkbox" name="Project type[]" value="Brand identity or logo" data-project="design"><span>Brand identity</span></label>
+          <label><input type="checkbox" name="Project type[]" value="Marketing graphic or social content" data-project="design"><span>Marketing design</span></label>
+          <label><input type="checkbox" name="Project type[]" value="Packaging, label, or menu" data-project="design"><span>Packaging or menu</span></label>
+          <label><input type="checkbox" name="Project type[]" value="Presentation, training, or document" data-project="content"><span>Presentation or training</span></label>
+          <label><input type="checkbox" name="Project type[]" value="Dashboard or custom system" data-project="content"><span>Dashboard or system</span></label>
+          <label><input type="checkbox" name="Project type[]" value="Ongoing creative support"><span>Ongoing support</span></label>
+          <label><input type="checkbox" name="Project type[]" value="Other" data-project="other"><span>Something else</span></label>
+        </fieldset>
+        <p class="field-error" id="project-type-error" role="alert"></p>
+
+        <label><span>Describe the project <b aria-hidden="true">*</b></span><textarea name="Project summary" rows="5" required placeholder="What do you need created, changed, or improved?"></textarea></label>
+        <div class="field-grid two-column spaced-top">
+          <label><span>Main goal <b aria-hidden="true">*</b></span><textarea name="Main goal" rows="3" required placeholder="What should this project accomplish?"></textarea></label>
+          <label><span>Audience <b aria-hidden="true">*</b></span><textarea name="Audience" rows="3" required placeholder="Who will see or use it?"></textarea></label>
+        </div>
+
+        <div class="conditional-panel" data-panel="website" hidden>
+          <div class="conditional-title"><span>WEBSITE DETAILS</span><p>Only complete what you already know.</p></div>
+          <div class="field-grid two-column">
+            <label>
+              <span>Website project</span>
+              <select name="Website project">
+                <option value="">Choose one</option><option>New website</option><option>Redesign</option><option>Landing page</option><option>Online store</option><option>Updates or maintenance</option>
+              </select>
+            </label>
+            <label><span>Current website or desired domain</span><input type="url" name="Website URL" placeholder="https://"></label>
+          </div>
+          <label><span>Pages, features, and integrations</span><textarea name="Website requirements" rows="4" placeholder="Examples: Home, About, services, booking, payments, forms, online store, customer login, email marketing..."></textarea></label>
+        </div>
+
+        <div class="conditional-panel" data-panel="design" hidden>
+          <div class="conditional-title"><span>DESIGN DETAILS</span><p>Include specifications when available.</p></div>
+          <div class="field-grid two-column">
+            <label><span>Deliverables, quantity, and dimensions</span><textarea name="Design deliverables" rows="4" placeholder="Example: one logo system, two-sided 8.5 x 11 menu, three social sizes..."></textarea></label>
+            <label><span>Final use and production needs</span><textarea name="Design production" rows="4" placeholder="Print, web, social, packaging, TV display, vendor specifications, editable files..."></textarea></label>
+          </div>
+        </div>
+
+        <div class="conditional-panel" data-panel="content" hidden>
+          <div class="conditional-title"><span>CONTENT OR SYSTEM DETAILS</span><p>For presentations, training, documents, dashboards, or tools.</p></div>
+          <div class="field-grid two-column">
+            <label><span>Format, size, and delivery</span><textarea name="Content format" rows="4" placeholder="Slide count, module length, document pages, screen size, platform, live or self-guided..."></textarea></label>
+            <label><span>Source material and functionality</span><textarea name="Content sources and functionality" rows="4" placeholder="Existing content, data sources, subject experts, interactions, user roles, exports..."></textarea></label>
+          </div>
+        </div>
+
+        <div class="conditional-panel" data-panel="other" hidden>
+          <div class="conditional-title"><span>OTHER PROJECT DETAILS</span></div>
+          <label><span>What should I understand about this request?</span><textarea name="Other project details" rows="4"></textarea></label>
+        </div>
+      </section>
+
+      <section class="form-section" aria-labelledby="direction-heading">
+        <div class="section-heading">
+          <span>03</span>
+          <div><h2 id="direction-heading">Direction and materials</h2><p>Give me enough context to recommend the right approach.</p></div>
+        </div>
+        <div class="field-grid two-column">
+          <label><span>Creative direction</span><textarea name="Creative direction" rows="4" placeholder="Describe the look, feel, tone, colors, or personality."></textarea></label>
+          <label><span>Must include or avoid</span><textarea name="Must include or avoid" rows="4" placeholder="Required copy, products, colors, logos, legal text, or off-limit directions."></textarea></label>
+          <label><span>Inspiration or competitor links</span><textarea name="Reference links" rows="3" placeholder="Paste links and briefly explain what you like or dislike."></textarea></label>
+          <div>
+            <span class="field-label">Existing materials</span>
+            <div class="check-list">
+              <label><input type="checkbox" name="Existing materials[]" value="Copy or text"> <span>Copy or text</span></label>
+              <label><input type="checkbox" name="Existing materials[]" value="Logo or brand guide"> <span>Logo or brand guide</span></label>
+              <label><input type="checkbox" name="Existing materials[]" value="Photos, video, or audio"> <span>Photos, video, or audio</span></label>
+              <label><input type="checkbox" name="Existing materials[]" value="Data or source files"> <span>Data or source files</span></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section" aria-labelledby="schedule-heading">
+        <div class="section-heading">
+          <span>04</span>
+          <div><h2 id="schedule-heading">Schedule, budget, and files</h2><p>Final pricing and timing follow after the request is reviewed.</p></div>
+        </div>
+        <div class="field-grid three-column">
+          <label><span>Target deadline</span><input type="date" name="Target deadline"></label>
+          <label><span>Timing</span><select name="Timing"><option value="">Choose one</option><option>Standard</option><option>Rush</option><option>Flexible</option></select></label>
+          <label>
+            <span>Estimated budget</span>
+            <select name="Estimated budget">
+              <option value="">Choose one</option><option>Under $250</option><option>$250 - $500</option><option>$500 - $1,500</option><option>$1,500 - $3,000</option><option>$3,000 - $7,500</option><option>$7,500+</option><option>Need guidance</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="upload-label" for="attachments">Attachments</label>
+        <div class="upload-zone" id="upload-zone">
+          <input id="attachments" type="file" name="attachment" multiple accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.csv,.txt,.jpg,.jpeg,.png,.webp,.svg,.zip">
+          <div class="upload-copy"><strong>Drop files here or choose files</strong><span>PDFs, documents, images, spreadsheets, presentations, or ZIP files - 10 MB total maximum.</span></div>
+        </div>
+        <ul class="file-list" id="file-list" aria-live="polite"></ul>
+        <p class="field-error" id="file-error" role="alert"></p>
+
+        <div class="field-grid two-column">
+          <label><span>Shared folder link</span><input type="url" name="Shared folder link" placeholder="Optional for files larger than 10 MB"></label>
+          <label><span>Best way to contact you</span><select name="Preferred contact"><option>Email</option><option>Phone</option><option>Text</option><option>Video call</option></select></label>
+        </div>
+        <label><span>Anything else?</span><textarea name="Additional notes" rows="4" placeholder="Constraints, approvals, questions, or important background."></textarea></label>
+
+        <label class="consent"><input type="checkbox" name="Asset permission confirmed" value="Yes" required><span>I own or have permission to share the files and content submitted with this request. <b aria-hidden="true">*</b></span></label>
+        <p class="privacy-note">Do not submit passwords, payment-card information, or highly sensitive personal data. Form details and attachments are delivered to Hire Walter through a third-party form service.</p>
+        <p class="form-error" id="form-error" role="alert"></p>
+        <button class="submit-button" type="submit"><span>Send project request</span><span aria-hidden="true">&rarr;</span></button>
+      </section>
+    </form>
+  </main>
+
+  <footer><span>Walter Giraldo</span><a href="mailto:info@hirewalter.com">info@hirewalter.com</a><span>Boston based - virtually everywhere</span></footer>
+</body>
+</html>
